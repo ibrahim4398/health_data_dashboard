@@ -1,5 +1,6 @@
 
 Health Monitoring Dashboard
+the file named (fetching data) contained the first original main that retrive the original data and save it to patient_data_raw.json .
 
 This project was developed as part of an interview task. The objective is to analyze and visualize health data using Python. The project covers data retrieval, preprocessing, machine learning classification, and an interactive dashboard for visualization.
 
