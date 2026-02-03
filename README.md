@@ -1,15 +1,45 @@
+# 🩺 Health Monitoring Dashboard
 
-Health Monitoring Dashboard
-the file named (fetching data) contained the first original main that retrive the original data and save it to patient_data_raw.json .
+## 📖 Introduction
 
-This project was developed as part of an interview task. The objective is to analyze and visualize health data using Python. The project covers data retrieval, preprocessing, machine learning classification, and an interactive dashboard for visualization.
+The **Health Monitoring Dashboard** is a complete data analysis and visualization project developed as part of a technical interview task.  
+The goal of this project is to demonstrate the ability to **retrieve, process, analyze, classify, and visualize health-related data** using Python and modern data science tools.
 
-The process begins with retrieving raw health data from Firebase, which is provided in a file called patient_data_raw.json. This data includes various metrics such as sleep duration, steps taken, heart rate, calories, and more. The data is then cleaned and transformed into a structured table using pandas.
+The project follows a **full data pipeline**, starting from raw data retrieval and ending with an interactive dashboard that allows users to explore health insights in a clear and meaningful way.
 
-Once the data is prepared, it is labeled based on simple health classification rules. Each record is categorized as 'Good', 'Moderate', or 'Poor' depending on factors like sleep quality, heart rate, and physical activity. A Random Forest classifier is then trained using scikit-learn to predict these health categories. The classified data is saved in a file called classified_patient_data.csv.
+---
 
-To make the results accessible and interactive, a web dashboard is built using Dash and Plotly. The dashboard displays several charts including the distribution of health categories, steps by category, sleep duration, active minutes, and average heart rate. When the dashboard is run, it automatically opens in the browser at http://127.0.0.1:8050.
+## 🎯 Project Objectives
 
-To run this project, you need to have Python installed. Required libraries are listed in the requirements.txt file. You can install them by running 'pip install -r requirements.txt' in the terminal. Then run the main.py file to process the data and train the model. Finally, run dashboard.py to launch the web application.
+- Retrieve raw health data from a remote source
+- Clean and preprocess unstructured data
+- Apply rule-based health labeling
+- Train a machine learning model to classify health conditions
+- Store processed and classified data
+- Build an interactive dashboard for data exploration
+- Present results in a clear and user-friendly format
 
-This project was created by Ibrahim Kerouaz .
+---
+
+## 🗂️ Project Structure
+
+```text
+├── fetching_data.py
+│   └── Retrieves original health data and saves it locally
+│
+├── patient_data_raw.json
+│   └── Raw health data including sleep, steps, heart rate, calories, and activity
+│
+├── main.py
+│   └── Data preprocessing, labeling, and machine learning classification
+│
+├── classified_patient_data.csv
+│   └── Final dataset containing predicted health categories
+│
+├── dashboard.py
+│   └── Interactive data visualization dashboard
+│
+├── requirements.txt
+│   └── List of required Python dependencies
+│
+└── README.md
